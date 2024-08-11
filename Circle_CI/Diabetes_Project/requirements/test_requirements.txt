@@ -1,0 +1,10 @@
+-r requirements.txt
+
+# testing requirements
+pytest>=7.3.3,<7.5.0
+
+# repo maintenance tooling
+black>=22.0.0,<24.0.0  #code styling and enforcement tool
+flake8>=5.9.0,<6.1.0   #linting tool --> to check whether we are adhering to good python conventions
+mypy==1.8.0            #type checking tool
+isort==5.9.3           #to check imports are in correct order

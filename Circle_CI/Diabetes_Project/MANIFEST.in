@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./model_creation/*
+
+include model_creation/datasets/health_care_diabetes.csv
+include model_creation/datasets/test.csv
+include model_creation/trained_models/*.pkl
+include model_creation/VERSION
+include model_creation/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

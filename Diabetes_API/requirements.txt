@@ -1,0 +1,9 @@
+-r model_requirements.txt
+uvicorn>=0.25.0,<0.28.0
+fastapi>=0.102.0,<1.0.0
+#python-multipart>=0.0.5,<0.1.0
+pydantic>=1.10.1,<1.10.10
+typing_extensions>=4.7.4,<4.9.0
+loguru>=0.7.1,<0.7.5
+# We will explain this in the course
+#tid-diabetes-model

@@ -1,0 +1,58 @@
+# Package Overview
+package_name: classification_model
+
+# Data Files
+training_data_file: health_care_diabetes.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (outcome i.e, whether patient is diabetic or not)
+target: Outcome
+
+pipeline_name: classification_model
+pipeline_save_file: classification_model_output_v
+
+# Will cause syntax errors since they begin with numbers
+#Below is a disctionary
+#variables_to_rename:
+#  1stFlrSF: FirstFlrSF
+#  2ndFlrSF: SecondFlrSF
+#  3SsnPorch: ThreeSsnPortch
+
+#Below is a list
+features:
+  - Pregnancies
+  - Glucose
+  - BloodPressure
+  - SkinThickness
+  - Insulin
+  - BMI
+  - DiabetesPedigreeFunction
+  - Age
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 1
+
+stratify: y
+
+alpha: 0.001
+
+numerical_vars_with_na:
+  - Glucose
+  - BloodPressure
+  - SkinThickness
+  - Insulin
+  - BMI
+
+# variables to boxcox transform
+numericals_log_vars:
+  - Pregnancies
+  - SkinThickness
+  - Insulin
+  - DiabetesPedigreeFunction
+  - Age
+
+

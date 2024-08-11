@@ -1,0 +1,2 @@
+--extra-index-url https://repo.fury.io/rakeshyads/
+tid-diabetes-model==0.0.1
